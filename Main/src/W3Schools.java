@@ -1,5 +1,5 @@
 public class W3Schools {
-    public static void main(String[] args) {
+    static void old() {
         System.out.println("Hello World!!");
         System.out.println("I am learning to code in java");
         System.out.println("It is awesome");
@@ -199,6 +199,52 @@ public class W3Schools {
                 continue;
             }
             System.out.println(i);
+        } 
+    }
+    static void foreach() {
+        String[] cars = {"Volvo", "BMW", "Ford", "Mazda"}; // defined array
+        for (String i : cars) { //makes a varable i for each enrty to cars then loops thow
+            System.out.println(i); //prints on each loop
         }
+    } 
+    static void time_table() {
+        int number = 2;
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(number + " x " + i + " = " + (number * i));
+        }
+    }
+    static void scontinue() {
+        for (int i = 0; i < 10; i = i + 1) {
+            if (i == 4) {
+                continue;
+            }
+            System.out.println(i);
+        }
+    }
+    static void array() {
+        String[] car = {"Volvo", "BMW", "Ford", "Mazda"};
+        System.out.println(car[0]);
+        car[0] = "Opel";
+        System.out.println(car[0]);
+        System.out.println(car[0].length());
+    }
+    static void UNlittle() {
+        int ages[] = {20, 22, 18, 35, 48, 26, 87, 70};
+        int heightest_age = ages[0];
+        for (int age : ages) {
+            if (heightest_age < age) {
+                heightest_age = age;
+            }
+        }
+        System.out.println("The highest age is " + heightest_age);
+    }
+    public static void main(String[] args) {
+        //old(); runs old methored
+       //foreach();
+       //time_table();
+       //scontinue();
+       //array();
+       UNlittle();
+
     }
 }
